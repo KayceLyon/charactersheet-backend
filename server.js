@@ -8,6 +8,11 @@ const session = require('express-session');
 app.use(express.json());
 app.use(cors());
 
+const characterController = require('./Controllers/characterController')
+
+app.use('/characters', characterController)
+
+
 let PORT = 3000;
 if(process.env.PORT){
 	PORT = process.env.PORT
