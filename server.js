@@ -8,7 +8,7 @@ const session = require('express-session');
 app.use(express.json());
 app.use(cors());
 
-const characterController = require('../controllers/characterController')
+const characterController = require('./controllers/characterController')
 
 app.use('/characters', characterController)
 
@@ -22,6 +22,6 @@ app.listen(PORT, ()=>{
     console.log('Listening')
 })
 
-mongoose.connect('mongodb+srv://klyon:rEX42p0J9UVnLCEA@sheet.wxrwmjd.mongodb.net/?retryWrites=true&w=majority', () => {
+mongoose.connect('mongodb+srv://klyon:UFhBSoQTt4its9Md@sheet.wxrwmjd.mongodb.net/?retryWrites=true&w=majority', () => {
     console.log('Linked')
 })
