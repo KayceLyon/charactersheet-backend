@@ -5,10 +5,10 @@ const cors = require('cors');
 const app = express()
 const session = require('express-session');
 
+const characterController = require('./controllers/characterController')
+
 app.use(express.json());
 app.use(cors());
-
-const characterController = require('./controllers/characterController')
 
 app.use('/characters', characterController)
 
