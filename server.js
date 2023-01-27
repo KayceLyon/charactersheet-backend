@@ -8,7 +8,7 @@ const session = require('express-session');
 app.use(express.json());
 app.use(cors());
 
-const characterController = require('./controllers/characterController')
+const characterController = require('../controllers/characterController')
 
 app.use('/characters', characterController)
 
