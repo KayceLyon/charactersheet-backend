@@ -1,6 +1,6 @@
 const express = require('express');
 const characters = express.Router();
-const Character = require('../models/character')
+const Character = require('../models/characters')
 
 // CREATE Character
 characters.post('/', (req, res)=>{
